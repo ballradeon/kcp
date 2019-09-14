@@ -44,19 +44,19 @@ SUPERVISOR_SYSTEMD_FILE_URL="${BASE_URL}/startup/supervisord.systemd"
 
 # 默认参数
 # =======================
-D_LISTEN_PORT=29900
+D_LISTEN_PORT=10444
 D_TARGET_ADDR='127.0.0.1'
-D_TARGET_PORT=12984
-D_KEY="very fast"
-D_CRYPT='aes'
-D_MODE='fast'
-D_MTU=1350
-D_SNDWND=512
-D_RCVWND=512
+D_TARGET_PORT=10240
+D_KEY="7758258"
+D_CRYPT='salsa20'
+D_MODE='fast2'
+D_MTU=1300
+D_SNDWND=1024
+D_RCVWND=1024
 D_DATASHARD=10
 D_PARITYSHARD=3
 D_DSCP=0
-D_NOCOMP='false'
+D_NOCOMP='true'
 D_QUIET='false'
 D_TCP='false'
 D_SNMPPERIOD=60
@@ -81,13 +81,13 @@ clear
 
 cat >&1 <<-'EOF'
 #########################################################
-# Kcptun 服务端一键安装脚本                             #
-# 该脚本支持 Kcptun 服务端的安装、更新、卸载及配置      #
-# 脚本作者: Index <kuoruan@gmail.com>                   #
-# 作者博客: https://blog.kuoruan.com/                   #
-# Github: https://github.com/kuoruan/shell-scripts      #
-# QQ交流群: 43391448, 68133628                          #
-#           633945405                                   #
+# Kcptun 服务端一键安装脚本                              #
+# 该脚本支持 Kcptun 服务端的安装、更新、卸载及配置         #
+#                                                      #
+#                                                      #
+#                                                      #
+#                                                      #
+#                                                      #
 #########################################################
 EOF
 
