@@ -1084,7 +1084,7 @@ download_startup_file() {
 			set -x
 			# 删除旧版 service 文件
 
-			local old_service_file="/lib/systemd/system/supervisord.service"
+			local old_service_file="/etc/systemd/system/supervisord.service"
 			if [ -f "$old_service_file" ]; then
 				rm -f "$old_service_file"
 			fi
